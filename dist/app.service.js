@@ -12,6 +12,13 @@ let AppService = class AppService {
     getHello() {
         return 'Hello world!';
     }
+    getObject() {
+        let objeto = {
+            id: 1,
+            nome: "iury"
+        };
+        return objeto;
+    }
 };
 AppService = __decorate([
     common_1.Injectable()

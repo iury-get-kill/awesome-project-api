@@ -20,11 +20,7 @@ let AppController = class AppController {
         return this.appService.getHello();
     }
     getObject() {
-        let objeto = {
-            id: 1,
-            nome: 'iury'
-        };
-        return objeto;
+        return this.appService.getObject();
     }
 };
 __decorate([
