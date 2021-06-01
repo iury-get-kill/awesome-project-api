@@ -13,4 +13,13 @@ export class AppController {
   getObject(): any{
     return this.appService.getObject()
   }
+  
+  /*
+  @Post('cadastrar')
+  cadastrar(): Promise<any>{
+    return <any>{
+      mensagem: "Salvou"
+    }
+  }
+  */
 }

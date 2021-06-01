@@ -3,4 +3,6 @@ export declare class Usuario {
     nome: string;
     email: string;
     password: string;
+    telefone: string;
+    cpf: string;
 }

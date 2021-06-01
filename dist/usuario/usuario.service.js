@@ -14,13 +14,37 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UsuarioService = void 0;
 const common_1 = require("@nestjs/common");
+const resultado_dto_1 = require("../dto/resultado.dto");
 const typeorm_1 = require("typeorm");
+const usuario_entity_1 = require("./usuario.entity");
+const bcrypt = require("bcrypt");
 let UsuarioService = class UsuarioService {
     constructor(usuarioRepository) {
         this.usuarioRepository = usuarioRepository;
     }
     async listar() {
         return this.usuarioRepository.find();
+    }
+    async cadastrar(data) {
+        let usuario = new usuario_entity_1.Usuario();
+        usuario.email = data.email;
+        usuario.nome = data.nome;
+        usuario.password = bcrypt.hashSync(data.senha, 8);
+        usuario.telefone = data.telefone;
+        usuario.cpf = data.cpf;
+        return this.usuarioRepository.save(usuario)
+            .then((result) => {
+            return {
+                status: true,
+                mensagem: "Usuário cadastrado com  sucesso"
+            };
+        })
+            .catch((error) => {
+            return {
+                status: false,
+                mensagem: "Houve um error ao cadastrar o usuário"
+            };
+        });
     }
 };
 UsuarioService = __decorate([

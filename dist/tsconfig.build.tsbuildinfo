@@ -1182,7 +1182,7 @@
         "affectsGlobalScope": false
       },
       "../src/app.controller.ts": {
-        "version": "36fd6bcb400c2ce8201e4d758b65ecc753e1d149e833e3daab1ea3fa11055946",
+        "version": "bc69139dc77bff6286cb88f1a9f7fd17e3e14dc170232fe10f2e58a3d4b1f345",
         "signature": "9f76a7dcdd4afeafec831da47ff0cba580b9c4cfb6d5e66f357b41828047bb08",
         "affectsGlobalScope": false
       },
@@ -2837,7 +2837,7 @@
         "affectsGlobalScope": false
       },
       "../src/database/database.providers.ts": {
-        "version": "38b0a7b1ecb7bfa7b79718c9c83b3558823e78b1943fc467f7bf17981677b5cb",
+        "version": "440300b7c175ec8b6e5a6ad7fe043610e805c5906b19f0c6759ba5637df8e9d5",
         "signature": "bf6bc37b5bd69df23b7a437c9a74bfd078a9d5410331346d476d71e567f246d2",
         "affectsGlobalScope": false
       },
@@ -2846,19 +2846,29 @@
         "signature": "a7ad670f373dd5665c73c7dc09a8e28b976a63bd7ed08def7c1c13456e87d3dc",
         "affectsGlobalScope": false
       },
+      "../src/dto/resultado.dto.ts": {
+        "version": "91e70a6aecf0cf3f625d3fc458dc24a3c99477cac25046873e9ee46056ef341e",
+        "signature": "2a7a4ec372b209fd9805c0d2e472a387530885a2c5bd0653581b016327fef72a",
+        "affectsGlobalScope": false
+      },
+      "../src/usuario/dto/usuario.cadastrar.dto.ts": {
+        "version": "53b2cd57763aa8833f94af031552066ab32777ede56ec9437332862669de633b",
+        "signature": "649af92f55808204c408e5dbe7286902986df262a47ec9bdfd32ae06c3344fe2",
+        "affectsGlobalScope": false
+      },
       "../src/usuario/usuario.entity.ts": {
-        "version": "5a720b5d10b899b8924fdf671422d9c0f73ac5273fe6c717bcbdffa77e69307d",
-        "signature": "d8320abdb21d9f1620a041ec913717359515aa4aa1c1c8aa2224f909f5e7f806",
+        "version": "7c2bf072f402f149ecab4cf03c9384624742bb796c67ffae3b2e42ad67163aa2",
+        "signature": "5dbaec16f6ae6a55004cf364d8e8153bd2bd977bb1fc4f08acc7ad2f91327939",
         "affectsGlobalScope": false
       },
       "../src/usuario/usuario.service.ts": {
-        "version": "99df6cc2c146384f722408933cce8e7edd851c5fddf1b9695d3bab5df72e5b1d",
-        "signature": "d86453318b36e391afb0762cecc9512099d3ecbe7d27f77ca537c13a3a2e8606",
+        "version": "c5ed2b81b716c303d5ea2482b95259653cbd17185141c4e2f77d853f6191ee57",
+        "signature": "12877ec864f19201d07c02cd7c8d6711bf06639573e5497cefb1ecd975bc47db",
         "affectsGlobalScope": false
       },
       "../src/usuario/usuario.controller.ts": {
-        "version": "9866c3870b8c0a9a940c34fb969f6efee36e6cd09aa0b6c8a4b23fd3cc72617c",
-        "signature": "3d816388a209120482077652362de88c65b30dad85d6d0cb1ff7217ca0acaccf",
+        "version": "137f7c012577ba6f63757144cf2b0dee5b5d02f2c9f32f469056615dcb5013b3",
+        "signature": "5a633e70826d125c88a335b1abba55a4bf922b873fa5dc8aa23d122f9a7dac86",
         "affectsGlobalScope": false
       },
       "../src/usuario/usuario.providers.ts": {
@@ -5969,6 +5979,9 @@
       ],
       "../src/usuario/usuario.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/node/zlib.d.ts",
+        "../src/dto/resultado.dto.ts",
+        "../src/usuario/dto/usuario.cadastrar.dto.ts",
         "../src/usuario/usuario.entity.ts",
         "../src/usuario/usuario.service.ts"
       ],
@@ -5989,6 +6002,8 @@
       "../src/usuario/usuario.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
+        "../src/dto/resultado.dto.ts",
+        "../src/usuario/dto/usuario.cadastrar.dto.ts",
         "../src/usuario/usuario.entity.ts"
       ]
     },
@@ -8421,6 +8436,8 @@
         "../node_modules/typeorm/index.d.ts"
       ],
       "../src/usuario/usuario.controller.ts": [
+        "../src/dto/resultado.dto.ts",
+        "../src/usuario/dto/usuario.cadastrar.dto.ts",
         "../src/usuario/usuario.entity.ts",
         "../src/usuario/usuario.service.ts"
       ],
@@ -8430,6 +8447,8 @@
       ],
       "../src/usuario/usuario.service.ts": [
         "../node_modules/typeorm/index.d.ts",
+        "../src/dto/resultado.dto.ts",
+        "../src/usuario/dto/usuario.cadastrar.dto.ts",
         "../src/usuario/usuario.entity.ts"
       ]
     },
@@ -9129,7 +9148,9 @@
       "../src/app.service.ts",
       "../src/database/database.module.ts",
       "../src/database/database.providers.ts",
+      "../src/dto/resultado.dto.ts",
       "../src/main.ts",
+      "../src/usuario/dto/usuario.cadastrar.dto.ts",
       "../src/usuario/usuario.controller.ts",
       "../src/usuario/usuario.entity.ts",
       "../src/usuario/usuario.module.ts",

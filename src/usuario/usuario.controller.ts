@@ -1,4 +1,7 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
+import { ResultadoDto } from 'src/dto/resultado.dto';
+import { brotliCompressSync } from 'zlib';
+import { UsuarioCadastrarDto } from './dto/usuario.cadastrar.dto';
 import { Usuario } from './usuario.entity';
 import { UsuarioService } from './usuario.service';
 
@@ -10,4 +13,9 @@ export class UsuarioController {
   async listar(): Promise<Usuario[]>{
       return this.usuarioService.listar()
   }
-}
+
+  @Post('cadastrar')
+  async cadastrar(@Body() data: UsuarioCadastrarDto): Promise<ResultadoDto>{
+    return this.usuarioService.cadastrar(data)
+    }
+  }
