@@ -14,11 +14,15 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UsuarioController = void 0;
 const common_1 = require("@nestjs/common");
+const passport_1 = require("@nestjs/passport");
+const auth_service_1 = require("../auth/auth.service");
+const jwt_auth_guard_1 = require("../auth/jwt-auth.guard");
 const resultado_dto_1 = require("../dto/resultado.dto");
 const usuario_service_1 = require("./usuario.service");
 let UsuarioController = class UsuarioController {
-    constructor(usuarioService) {
+    constructor(usuarioService, authService) {
         this.usuarioService = usuarioService;
+        this.authService = authService;
     }
     async listar() {
         return this.usuarioService.listar();
@@ -26,8 +30,12 @@ let UsuarioController = class UsuarioController {
     async cadastrar(data) {
         return this.usuarioService.cadastrar(data);
     }
+    async login(req) {
+        return this.authService.login(req.user);
+    }
 };
 __decorate([
+    common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     common_1.Get('listar'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
@@ -40,9 +48,18 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UsuarioController.prototype, "cadastrar", null);
+__decorate([
+    common_1.UseGuards(passport_1.AuthGuard('local')),
+    common_1.Post('login'),
+    __param(0, common_1.Request()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object]),
+    __metadata("design:returntype", Promise)
+], UsuarioController.prototype, "login", null);
 UsuarioController = __decorate([
     common_1.Controller('usuario'),
-    __metadata("design:paramtypes", [usuario_service_1.UsuarioService])
+    __metadata("design:paramtypes", [usuario_service_1.UsuarioService,
+        auth_service_1.AuthService])
 ], UsuarioController);
 exports.UsuarioController = UsuarioController;
 //# sourceMappingURL=usuario.controller.js.map
