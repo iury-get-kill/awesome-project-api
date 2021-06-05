@@ -27,17 +27,17 @@ export class UsuarioService {
     .then((result) => {
       return <ResultadoDto>{
         status: true,
-        mensagem: "Usuário cadastrado com  sucesso"
+        mensagem: "Usuário cadastrado com sucesso"
       }
     })
     .catch((error) => {
       return <ResultadoDto>{
         status: false,
-        mensagem: "Houve um error ao cadastrar o usuário"
+        mensagem: "Houve um errro ao cadastrar o usuário"
       }
-    })
+    })    
   }
-
+  
   async findOne(email: string): Promise<Usuario | undefined> {
     return this.usuarioRepository.findOne({email: email});
   }

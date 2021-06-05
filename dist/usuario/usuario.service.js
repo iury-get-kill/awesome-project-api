@@ -36,13 +36,13 @@ let UsuarioService = class UsuarioService {
             .then((result) => {
             return {
                 status: true,
-                mensagem: "Usuário cadastrado com  sucesso"
+                mensagem: "Usuário cadastrado com sucesso"
             };
         })
             .catch((error) => {
             return {
                 status: false,
-                mensagem: "Houve um error ao cadastrar o usuário"
+                mensagem: "Houve um errro ao cadastrar o usuário"
             };
         });
     }

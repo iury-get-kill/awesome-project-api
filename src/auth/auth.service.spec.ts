@@ -16,5 +16,4 @@ describe('AuthService', () => {
     expect(service).toBeDefined();
   });
 });
-
 //erro para ver a senha e o email no postmen na {{URL}}/usuario/login aula 28

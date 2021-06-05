@@ -12,4 +12,7 @@ export declare class UsuarioController {
     login(req: any): Promise<{
         access_token: string;
     }>;
+    loginToken(req: any, data: any): Promise<import("@nestjs/common").HttpException | {
+        access_token: string;
+    }>;
 }

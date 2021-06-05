@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Usuario = void 0;
+const servico_entity_1 = require("../servico/servico.entity");
 const typeorm_1 = require("typeorm");
 let Usuario = class Usuario {
 };
@@ -37,6 +38,10 @@ __decorate([
     typeorm_1.Column({ length: 14 }),
     __metadata("design:type", String)
 ], Usuario.prototype, "cpf", void 0);
+__decorate([
+    typeorm_1.OneToMany(() => servico_entity_1.Servico, servico => servico.usuario),
+    __metadata("design:type", Array)
+], Usuario.prototype, "servicos", void 0);
 Usuario = __decorate([
     typeorm_1.Entity()
 ], Usuario);

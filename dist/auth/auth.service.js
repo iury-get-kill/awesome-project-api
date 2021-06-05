@@ -22,10 +22,11 @@ var __rest = (this && this.__rest) || function (s, e) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthService = void 0;
 const common_1 = require("@nestjs/common");
-const jwt_1 = require("@nestjs/jwt");
-const bcrypt = require("bcrypt");
-const token_service_1 = require("../token/token.service");
 const usuario_service_1 = require("../usuario/usuario.service");
+const bcrypt = require("bcrypt");
+const jwt_1 = require("@nestjs/jwt");
+const token_service_1 = require("../token/token.service");
+const usuario_entity_1 = require("../usuario/usuario.entity");
 let AuthService = class AuthService {
     constructor(usuarioService, jwtService, tokenService) {
         this.usuarioService = usuarioService;
@@ -41,11 +42,23 @@ let AuthService = class AuthService {
         return null;
     }
     async login(user) {
-        const payload = { username: user.username, sub: user.userId };
+        const payload = { username: user.email, sub: user.id };
         const token = this.jwtService.sign(payload);
+        this.tokenService.save(token, user.email);
         return {
             access_token: token
         };
+    }
+    async loginToken(token) {
+        let usuario = await this.tokenService.getUsuarioByToken(token);
+        if (usuario) {
+            return this.login(usuario);
+        }
+        else {
+            return new common_1.HttpException({
+                errorMessage: 'Token inválido'
+            }, common_1.HttpStatus.UNAUTHORIZED);
+        }
     }
 };
 AuthService = __decorate([

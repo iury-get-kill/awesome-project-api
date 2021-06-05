@@ -1,9 +1,9 @@
-
-import { Body, Controller, Get, Post, Request, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, Put, Request, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { AuthService } from 'src/auth/auth.service';
 import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 import { ResultadoDto } from 'src/dto/resultado.dto';
+import { TokenService } from 'src/token/token.service';
 import { UsuarioCadastrarDto } from './dto/usuario.cadastrar.dto';
 import { Usuario } from './usuario.entity';
 import { UsuarioService } from './usuario.service';
@@ -20,14 +20,20 @@ export class UsuarioController {
   }
 
   @Post('cadastrar')
-  async cadastrar(@Body() data: UsuarioCadastrarDto): Promise<ResultadoDto>{
-    return this.usuarioService.cadastrar(data)
-    }
-
-    @UseGuards(AuthGuard('local'))
-    @Post('login')
-    async login(@Request() req) {
-      return this.authService.login(req.user);  
-    }
+  async cadastrar(@Body() data: UsuarioCadastrarDto): Promise<ResultadoDto>{    
+    return this.usuarioService.cadastrar(data)    
   }
+
+  @UseGuards(AuthGuard('local'))
+  @Post('login')
+  async login(@Request() req) {
+    return this.authService.login(req.user);    
+  }
+
+  @Post('login-token')
+  async loginToken(@Request() req, @Body() data) {
+    return this.authService.loginToken(data.token);    
+  }
+  
+}
   //erro para ver a senha e o email no postmen na {{URL}}/usuario/login aula 28

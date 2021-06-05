@@ -1546,11 +1546,6 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/dto/resultado.dto.ts": {
-        "version": "91e70a6aecf0cf3f625d3fc458dc24a3c99477cac25046873e9ee46056ef341e",
-        "signature": "2a7a4ec372b209fd9805c0d2e472a387530885a2c5bd0653581b016327fef72a",
-        "affectsGlobalScope": false
-      },
       "../node_modules/typeorm/schema-builder/options/TableColumnOptions.d.ts": {
         "version": "222ebf19b1260582fd2023a65c5b7da77f730021f05afb9c4ead4b0b339a8c98",
         "signature": "222ebf19b1260582fd2023a65c5b7da77f730021f05afb9c4ead4b0b339a8c98",
@@ -3201,14 +3196,29 @@
         "signature": "1f956ff5e76bced84fffad27c121cfe12ecca23de8081c9ab9377ead7167a57d",
         "affectsGlobalScope": false
       },
+      "../src/database/database.providers.ts": {
+        "version": "440300b7c175ec8b6e5a6ad7fe043610e805c5906b19f0c6759ba5637df8e9d5",
+        "signature": "bf6bc37b5bd69df23b7a437c9a74bfd078a9d5410331346d476d71e567f246d2",
+        "affectsGlobalScope": false
+      },
+      "../src/database/database.module.ts": {
+        "version": "5f710d2c3d83bf87425174bdaa19a21364c12b32aedc703aa81a3c6fb2ded782",
+        "signature": "a7ad670f373dd5665c73c7dc09a8e28b976a63bd7ed08def7c1c13456e87d3dc",
+        "affectsGlobalScope": false
+      },
+      "../src/token/dto/refresh.token.dto.ts": {
+        "version": "0743644a9d753f9fabf47cf992807293326c0e39bccc6dc5a59de83f9cd29e93",
+        "signature": "9b44b66c008b73940ae5d4dabf8ebefaaa45e8ec8a4c88ec9324724153a69380",
+        "affectsGlobalScope": false
+      },
+      "../src/dto/resultado.dto.ts": {
+        "version": "91e70a6aecf0cf3f625d3fc458dc24a3c99477cac25046873e9ee46056ef341e",
+        "signature": "2a7a4ec372b209fd9805c0d2e472a387530885a2c5bd0653581b016327fef72a",
+        "affectsGlobalScope": false
+      },
       "../src/token/token.entity.ts": {
         "version": "40fafe01dd61d9078220510a520cfe51723702d59b70180e052acbc4233870f2",
         "signature": "ff21735ad5d14970b6a5feb85b7f67957105f34445090f58b95ab35bd5c6cb2c",
-        "affectsGlobalScope": false
-      },
-      "../src/token/token.service.ts": {
-        "version": "3010ab372bdd607b3e79247aa46f7e521663a8167d68eab9cfa4e4d3290ccae8",
-        "signature": "0d8acccb700310cdc1d16227fb7c86b6f66b53b4fcab5f8a7529ccbfe1d448c0",
         "affectsGlobalScope": false
       },
       "../src/usuario/dto/usuario.cadastrar.dto.ts": {
@@ -3216,19 +3226,44 @@
         "signature": "649af92f55808204c408e5dbe7286902986df262a47ec9bdfd32ae06c3344fe2",
         "affectsGlobalScope": false
       },
+      "../src/servico/servico.entity.ts": {
+        "version": "00070eb521b061a380fb9cd3bc8cfeaaa5023e10ab82b3addc8ed471fd7bc6a7",
+        "signature": "70ad84af9f7ba5e0b51146abb9b7a5df6ae110d46362dd4fcf8a7658f8dee2bd",
+        "affectsGlobalScope": false
+      },
       "../src/usuario/usuario.entity.ts": {
-        "version": "7c2bf072f402f149ecab4cf03c9384624742bb796c67ffae3b2e42ad67163aa2",
-        "signature": "5dbaec16f6ae6a55004cf364d8e8153bd2bd977bb1fc4f08acc7ad2f91327939",
+        "version": "50c8d27212c149e592c99b1c526d039e54f7734b5d08508473782e482c28d731",
+        "signature": "f6905690b282d56e97692f1a53e1dfaf01e3f277c126361d5aff6e4e7090ab6f",
         "affectsGlobalScope": false
       },
       "../src/usuario/usuario.service.ts": {
-        "version": "fd7f14ab6794583b0ed01d876dad416c4e1d307f380e37ab3a4d1c276dbf3f83",
+        "version": "5dfd652de08893ca3a0b69593222473169a97c79c80e57db96a8e6e416b5bd06",
         "signature": "2450e17b8c3795e8ba62d2088d0b91357da2355d9c1043b0a0a4911d949fa291",
         "affectsGlobalScope": false
       },
       "../src/auth/auth.service.ts": {
-        "version": "1953fd6040b1487f9a9ba6bf611e3a20fb1f2114d6cb489e02f6470884856873",
-        "signature": "154bb211510ed2b1c4bef2de1d61b76dcc43a3bbfed37e855c63cd423ce593ad",
+        "version": "d8aee9221759d4686cdac1ef46e3b51b2171887692aa74b7e4e392b329458d85",
+        "signature": "80b49350f7809783508db494e8136e58025a7c838ac9b80c7651e29e8ec402c4",
+        "affectsGlobalScope": false
+      },
+      "../src/token/token.service.ts": {
+        "version": "7a7030ffff0163e15148ad735467c8f69a1b0dc7969f187f6670eb37d96a1caf",
+        "signature": "916eb3c210f895e647ed500c131d947f219db10a4a7f5b90dd71e1df0a2226a5",
+        "affectsGlobalScope": false
+      },
+      "../src/token/token.controller.ts": {
+        "version": "e627fec5b39ead0353f6605873ba47e49f2a8ff9fa7e2a2ca3c051cb009ef199",
+        "signature": "4015f6d0818d26dc7210a4d9068f4c0d3be4b8b62b5cb41a3bdefcc66c75aca3",
+        "affectsGlobalScope": false
+      },
+      "../src/token/token.providers.ts": {
+        "version": "eadae89542c1ae8c8a29ca8d5f8ef7df1d06fcc1375d95ace11d775b699b8dd2",
+        "signature": "99ebc8418c89c601b54ac6a373aee02393ff3f26cc46cc973e911e7bebe7511f",
+        "affectsGlobalScope": false
+      },
+      "../src/token/token.module.ts": {
+        "version": "62462bac1926f642d5e4e600721807fd96ba4073b14e45659ca15cc95647b56a",
+        "signature": "3d500686aa1061df45201267d57375b5f2fad19b86528626375f7fb06d715588",
         "affectsGlobalScope": false
       },
       "../src/auth/constants.ts": {
@@ -3262,18 +3297,8 @@
         "affectsGlobalScope": false
       },
       "../src/auth/auth.module.ts": {
-        "version": "542e7ae94a413c693bd5ea806214b5530b40594b379b9f4c86ab4d7da82fb396",
+        "version": "a15032c078050813fff0330794c3dbfec9f1131b20e73d6712fab361f0cd93cd",
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
-        "affectsGlobalScope": false
-      },
-      "../src/database/database.providers.ts": {
-        "version": "440300b7c175ec8b6e5a6ad7fe043610e805c5906b19f0c6759ba5637df8e9d5",
-        "signature": "bf6bc37b5bd69df23b7a437c9a74bfd078a9d5410331346d476d71e567f246d2",
-        "affectsGlobalScope": false
-      },
-      "../src/database/database.module.ts": {
-        "version": "5f710d2c3d83bf87425174bdaa19a21364c12b32aedc703aa81a3c6fb2ded782",
-        "signature": "a7ad670f373dd5665c73c7dc09a8e28b976a63bd7ed08def7c1c13456e87d3dc",
         "affectsGlobalScope": false
       },
       "../src/auth/jwt-auth.guard.ts": {
@@ -3282,8 +3307,8 @@
         "affectsGlobalScope": false
       },
       "../src/usuario/usuario.controller.ts": {
-        "version": "22c40e01d415317a210dbdf805536caf14cc7e9416e0600d60d9b9747a99b3d5",
-        "signature": "47e4871b8ef7c2056e067761ef389c97f73973291b9acd52d89dde44d871b30d",
+        "version": "89c8898422820d498918f1e2b5ddac73b877ae70eb97e6214d26b66bdfc0c7d3",
+        "signature": "b9219ad575d117b8735878a55bac78d8fa16d61cd82bd25c2733266a7293c8f5",
         "affectsGlobalScope": false
       },
       "../src/usuario/usuario.providers.ts": {
@@ -3296,8 +3321,33 @@
         "signature": "7005737b1d38f6567bef56aa01edb693498a59417bb868074315080282a99b70",
         "affectsGlobalScope": false
       },
+      "../src/servico/dto/servico.cadastrar.dto.ts": {
+        "version": "b889079718d3378e6f90b1e51899149686dafa4d63d862d604587e75ea578f5a",
+        "signature": "991db0db0ca23eee4c7a8de291bded45c676d4ad9ce31bd89311c4c167b3295c",
+        "affectsGlobalScope": false
+      },
+      "../src/servico/servico.service.ts": {
+        "version": "9b800a680dc82ec646b060a2c28dd325af63b65c481b500efd917b91ac4d2c0d",
+        "signature": "26e261e9554c0fc040264b3cedab7a5bc28f535bce679d7b15dff3bae80828be",
+        "affectsGlobalScope": false
+      },
+      "../src/servico/servico.controller.ts": {
+        "version": "6db5d200e2b55082e9315dee67f4bdc5e57fcaf0ca8d559607b41b54250755b2",
+        "signature": "d73ee092de2710b2a8a5f4e7ab45b4fac9fbbe1760d079ef1489ec1e346fdec6",
+        "affectsGlobalScope": false
+      },
+      "../src/servico/servico.providers.ts": {
+        "version": "a3c483e7437d570798cec6a5f3c249856b0c0210cf8ee544deed7fc98dd1ffed",
+        "signature": "3138dcb5aa220131f6a5c27fefddff64be1fe82674058a5f458995ac3f065920",
+        "affectsGlobalScope": false
+      },
+      "../src/servico/servico.module.ts": {
+        "version": "603157b8e0ad5f59847b70d7b4d97e1caff32d6305ad6fce0c938c64da2ccb55",
+        "signature": "eab7bd6d4c590e6134b66cbda80d7061671bec887ce6411c3fc9f26fbdcb53dc",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "03feee5ec59ebdbda35aa933d2563b928e1d46653980718e6658f7fed6a0717e",
+        "version": "5853c48a9a89b7f6efce3d443800a98d8ca9baa214923c469db52e488d0aeb90",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -3484,16 +3534,6 @@
       "../src/main.ts": {
         "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
-        "affectsGlobalScope": false
-      },
-      "../src/token/token.providers.ts": {
-        "version": "eadae89542c1ae8c8a29ca8d5f8ef7df1d06fcc1375d95ace11d775b699b8dd2",
-        "signature": "99ebc8418c89c601b54ac6a373aee02393ff3f26cc46cc973e911e7bebe7511f",
-        "affectsGlobalScope": false
-      },
-      "../src/token/token.module.ts": {
-        "version": "8c87d48c5fb8b3df6d0b7733df773255c7bce47d5690bd8e848b17a170948684",
-        "signature": "3d500686aa1061df45201267d57375b5f2fad19b86528626375f7fb06d715588",
         "affectsGlobalScope": false
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
@@ -6196,6 +6236,7 @@
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/auth/auth.module.ts",
+        "../src/servico/servico.module.ts",
         "../src/usuario/usuario.module.ts"
       ],
       "../src/app.service.ts": [
@@ -6209,12 +6250,14 @@
         "../src/auth/constants.ts",
         "../src/auth/jwt.strategy.ts",
         "../src/auth/local.strategy.ts",
+        "../src/token/token.module.ts",
         "../src/usuario/usuario.module.ts"
       ],
       "../src/auth/auth.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../src/token/token.service.ts",
+        "../src/usuario/usuario.entity.ts",
         "../src/usuario/usuario.service.ts"
       ],
       "../src/auth/jwt-auth.guard.ts": [
@@ -6244,6 +6287,47 @@
         "../node_modules/@nestjs/core/index.d.ts",
         "../src/app.module.ts"
       ],
+      "../src/servico/servico.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/passport/index.d.ts",
+        "../src/auth/auth.service.ts",
+        "../src/auth/jwt-auth.guard.ts",
+        "../src/dto/resultado.dto.ts",
+        "../src/servico/dto/servico.cadastrar.dto.ts",
+        "../src/servico/servico.service.ts",
+        "../src/token/token.service.ts",
+        "../src/usuario/usuario.entity.ts"
+      ],
+      "../src/servico/servico.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/usuario/usuario.entity.ts"
+      ],
+      "../src/servico/servico.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/auth/auth.module.ts",
+        "../src/database/database.module.ts",
+        "../src/servico/servico.controller.ts",
+        "../src/servico/servico.providers.ts",
+        "../src/servico/servico.service.ts",
+        "../src/token/token.module.ts"
+      ],
+      "../src/servico/servico.providers.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/servico/servico.entity.ts"
+      ],
+      "../src/servico/servico.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/dto/resultado.dto.ts",
+        "../src/servico/dto/servico.cadastrar.dto.ts",
+        "../src/servico/servico.entity.ts",
+        "../src/usuario/usuario.entity.ts"
+      ],
+      "../src/token/token.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/token/dto/refresh.token.dto.ts",
+        "../src/token/token.service.ts"
+      ],
       "../src/token/token.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
@@ -6251,8 +6335,10 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/auth/auth.module.ts",
         "../src/database/database.module.ts",
+        "../src/token/token.controller.ts",
         "../src/token/token.providers.ts",
-        "../src/token/token.service.ts"
+        "../src/token/token.service.ts",
+        "../src/usuario/usuario.module.ts"
       ],
       "../src/token/token.providers.ts": [
         "../node_modules/typeorm/index.d.ts",
@@ -6261,8 +6347,11 @@
       "../src/token/token.service.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
+        "../src/auth/auth.service.ts",
         "../src/dto/resultado.dto.ts",
-        "../src/token/token.entity.ts"
+        "../src/token/token.entity.ts",
+        "../src/usuario/usuario.entity.ts",
+        "../src/usuario/usuario.service.ts"
       ],
       "../src/usuario/usuario.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6270,12 +6359,14 @@
         "../src/auth/auth.service.ts",
         "../src/auth/jwt-auth.guard.ts",
         "../src/dto/resultado.dto.ts",
+        "../src/token/token.service.ts",
         "../src/usuario/dto/usuario.cadastrar.dto.ts",
         "../src/usuario/usuario.entity.ts",
         "../src/usuario/usuario.service.ts"
       ],
       "../src/usuario/usuario.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/servico/servico.entity.ts"
       ],
       "../src/usuario/usuario.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -8802,6 +8893,7 @@
         "../src/app.service.ts"
       ],
       "../src/auth/auth.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/jwt/index.d.ts",
         "../src/token/token.service.ts",
         "../src/usuario/usuario.service.ts"
@@ -8819,20 +8911,51 @@
       "../src/database/database.providers.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
+      "../src/servico/servico.controller.ts": [
+        "../src/dto/resultado.dto.ts",
+        "../src/servico/servico.service.ts",
+        "../src/token/token.service.ts"
+      ],
+      "../src/servico/servico.entity.ts": [
+        "../src/usuario/usuario.entity.ts"
+      ],
+      "../src/servico/servico.providers.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/servico/servico.entity.ts"
+      ],
+      "../src/servico/servico.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/dto/resultado.dto.ts",
+        "../src/servico/servico.entity.ts",
+        "../src/usuario/usuario.entity.ts"
+      ],
+      "../src/token/token.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/token/dto/refresh.token.dto.ts",
+        "../src/token/token.service.ts"
+      ],
       "../src/token/token.providers.ts": [
         "../node_modules/typeorm/index.d.ts",
         "../src/token/token.entity.ts"
       ],
       "../src/token/token.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/token/token.entity.ts"
+        "../src/auth/auth.service.ts",
+        "../src/token/token.entity.ts",
+        "../src/usuario/usuario.entity.ts",
+        "../src/usuario/usuario.service.ts"
       ],
       "../src/usuario/usuario.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
         "../src/auth/auth.service.ts",
         "../src/dto/resultado.dto.ts",
         "../src/usuario/dto/usuario.cadastrar.dto.ts",
         "../src/usuario/usuario.entity.ts",
         "../src/usuario/usuario.service.ts"
+      ],
+      "../src/usuario/usuario.entity.ts": [
+        "../src/servico/servico.entity.ts"
       ],
       "../src/usuario/usuario.providers.ts": [
         "../node_modules/typeorm/index.d.ts",
@@ -9570,6 +9693,14 @@
       "../src/database/database.providers.ts",
       "../src/dto/resultado.dto.ts",
       "../src/main.ts",
+      "../src/servico/dto/servico.cadastrar.dto.ts",
+      "../src/servico/servico.controller.ts",
+      "../src/servico/servico.entity.ts",
+      "../src/servico/servico.module.ts",
+      "../src/servico/servico.providers.ts",
+      "../src/servico/servico.service.ts",
+      "../src/token/dto/refresh.token.dto.ts",
+      "../src/token/token.controller.ts",
       "../src/token/token.entity.ts",
       "../src/token/token.module.ts",
       "../src/token/token.providers.ts",

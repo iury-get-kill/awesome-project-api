@@ -9,15 +9,17 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TokenModule = void 0;
 const common_1 = require("@nestjs/common");
 const auth_module_1 = require("../auth/auth.module");
+const usuario_module_1 = require("../usuario/usuario.module");
 const database_module_1 = require("../database/database.module");
+const token_controller_1 = require("./token.controller");
 const token_providers_1 = require("./token.providers");
 const token_service_1 = require("./token.service");
 let TokenModule = class TokenModule {
 };
 TokenModule = __decorate([
     common_1.Module({
-        imports: [database_module_1.DatabaseModule, common_1.forwardRef(() => auth_module_1.AuthModule)],
-        controllers: [],
+        imports: [database_module_1.DatabaseModule, common_1.forwardRef(() => auth_module_1.AuthModule), usuario_module_1.UsuarioModule],
+        controllers: [token_controller_1.TokenController],
         providers: [
             ...token_providers_1.tokenProviders,
             token_service_1.TokenService,

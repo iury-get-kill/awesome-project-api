@@ -18,6 +18,7 @@ const passport_1 = require("@nestjs/passport");
 const auth_service_1 = require("../auth/auth.service");
 const jwt_auth_guard_1 = require("../auth/jwt-auth.guard");
 const resultado_dto_1 = require("../dto/resultado.dto");
+const token_service_1 = require("../token/token.service");
 const usuario_service_1 = require("./usuario.service");
 let UsuarioController = class UsuarioController {
     constructor(usuarioService, authService) {
@@ -32,6 +33,9 @@ let UsuarioController = class UsuarioController {
     }
     async login(req) {
         return this.authService.login(req.user);
+    }
+    async loginToken(req, data) {
+        return this.authService.loginToken(data.token);
     }
 };
 __decorate([
@@ -56,6 +60,13 @@ __decorate([
     __metadata("design:paramtypes", [Object]),
     __metadata("design:returntype", Promise)
 ], UsuarioController.prototype, "login", null);
+__decorate([
+    common_1.Post('login-token'),
+    __param(0, common_1.Request()), __param(1, common_1.Body()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], UsuarioController.prototype, "loginToken", null);
 UsuarioController = __decorate([
     common_1.Controller('usuario'),
     __metadata("design:paramtypes", [usuario_service_1.UsuarioService,
