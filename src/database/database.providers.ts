@@ -8,7 +8,7 @@ export const databaseProviders = [
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: 'iuryzika123',
+      password: '*********',
       database: 'AwesomeProject',
       entities: [
           __dirname + '/../**/*.entity{.ts,.js}',
